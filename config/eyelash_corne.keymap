@@ -55,10 +55,10 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &kp Q  &kp W  &kp E      &kp R         &kp T                                    &kp UP                &kp Y        &kp U      &kp I         &kp O    &kp P     &kp GLOBE
-&kp BACKSPACE   &kp A  &kp S  &kp D      &kp F         &kp G                          &kp LEFT  &kp ENTER  &kp RIGHT  &kp H        &kp J      &kp K         &kp L    &kp SEMI  &kp SQT
-&kp LEFT_SHIFT  &kp Z  &kp X  &kp C      &kp V         &kp B             &lt 3 ESC              &kp DOWN              &kp N        &kp M      &kp COMMA     &kp DOT  &kp FSLH  &kp RIGHT_SHIFT
-                              &kp LCTRL  &kp LEFT_ALT  &kp LEFT_COMMAND                                               &lt 2 ENTER  &kp SPACE  &lt 1 DELETE
+&kp TAB         &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E  &mt NUMBER_4 R  &mt N5 T                                 &kp UP                &mt NUMBER_6 Y  &mt N7 U   &mt N8 I      &mt N9 O  &mt N0 P  &kp GLOBE
+&kp BACKSPACE   &kp A           &kp S           &kp D           &kp F           &kp G                          &kp LEFT  &kp ENTER  &kp RIGHT  &kp H           &kp J      &kp K         &kp L     &kp SEMI  &kp SQT
+&kp LEFT_SHIFT  &kp Z           &kp X           &kp C           &kp V           &kp B             &lt 3 ESC              &kp DOWN              &kp N           &kp M      &kp COMMA     &kp DOT   &kp FSLH  &kp RIGHT_SHIFT
+                                                &kp LCTRL       &kp LEFT_ALT    &kp LEFT_COMMAND                                               &lt 2 ENTER     &kp SPACE  &lt 1 DELETE
             >;
 
             sensor-bindings = <&inc_dec_kp C_VOLUME_UP C_VOLUME_DOWN>;
@@ -91,9 +91,9 @@
         layer_3 {
             display-name = "Fn";
             bindings = <
-&ext_power EP_TOG  &kp F1           &kp F2        &kp F3        &kp F4        &kp F5                                    &mmv MOVE_UP                     &kp F6           &kp F7  &kp F8       &kp F9      &kp F10          &kp F11
-&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &bootloader      &none   &none        &none       &none            &kp F12
-&out OUT_TOG       &rgb_ug RGB_TOG  &sys_reset    &bootloader   &trans        &rgb_ug RGB_EFF  &to 0                    &mmv MOVE_DOWN                   &rgb_ug RGB_SPI  &trans  &bootloader  &sys_reset  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
+&ext_power EP_TOG  &kp F1           &kp F2        &kp F3        &kp F4        &kp F5                                    &mmv MOVE_UP                     &kp F6           &kp F7  &kp F8       &kp F9      &kp F10          &ext_power EP_TOG
+&bt BT_CLR         &bt BT_SEL 0     &bt BT_SEL 1  &bt BT_SEL 2  &bt BT_SEL 3  &bt BT_SEL 4              &mmv MOVE_LEFT  &mkp LCLK       &mmv MOVE_RIGHT  &none            &none   &none        &kp F11     &kp F12          &none
+&out OUT_TOG       &rgb_ug RGB_TOG  &sys_reset    &bootloader   &none         &rgb_ug RGB_EFF  &to 0                    &mmv MOVE_DOWN                   &rgb_ug RGB_SPI  &none   &bootloader  &sys_reset  &rgb_ug RGB_BRI  &rgb_ug RGB_BRD
                                                   &trans        &trans        &trans                                                                     &trans           &trans  &trans
             >;
 
