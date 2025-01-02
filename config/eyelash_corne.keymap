@@ -33,6 +33,14 @@
             #binding-cells = <0>;
             bindings = <&kp LEFT_SHIFT>, <&kp CAPS>;
         };
+        bn: balanced_number {
+            compatible = "zmk,behavior-hold-tap";
+            #binding-cells = <2>;
+            tapping-term-ms = <200>;
+            quick-tap-ms = <0>;
+            flavor = "balanced";
+            bindings = <&kp>, <&kp>;
+        };
     };
 
     rgb_encoder: rgb_encoder {
@@ -55,7 +63,7 @@
         default_layer {
             display-name = "QWERTY";
             bindings = <
-&kp TAB         &mt NUMBER_1 Q  &mt NUMBER_2 W  &mt NUMBER_3 E  &mt NUMBER_4 R  &mt N5 T                                 &kp UP                &mt NUMBER_6 Y  &mt N7 U   &mt N8 I      &mt N9 O  &mt N0 P  &kp GLOBE
+&kp TAB         &bn NUMBER_1 Q  &bn NUMBER_2 W  &bn NUMBER_3 E  &bn NUMBER_4 R  &bn N5 T                                 &kp UP                &bn NUMBER_6 Y  &bn N7 U   &bn N8 I      &bn N9 O  &bn N0 P  &kp GLOBE
 &kp BACKSPACE   &kp A           &kp S           &kp D           &kp F           &kp G                          &kp LEFT  &kp ENTER  &kp RIGHT  &kp H           &kp J      &kp K         &kp L     &kp SEMI  &kp SQT
 &kp LEFT_SHIFT  &kp Z           &kp X           &kp C           &kp V           &kp B             &lt 3 ESC              &kp DOWN              &kp N           &kp M      &kp COMMA     &kp DOT   &kp FSLH  &kp RIGHT_SHIFT
                                                 &kp LCTRL       &kp LEFT_ALT    &kp LEFT_COMMAND                                               &lt 2 ENTER     &kp SPACE  &lt 1 DELETE
