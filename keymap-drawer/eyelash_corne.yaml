@@ -1,17 +1,17 @@
 layers:
   QWERTY:
   - $$mdi:keyboard-tab$$
-  - {t: Q, h: '1'}
-  - {t: W, h: '2'}
-  - {t: E, h: '3'}
-  - {t: R, h: '4'}
-  - {t: T, h: '5'}
+  - '&bn NUMBER_1 Q'
+  - '&bn NUMBER_2 W'
+  - '&bn NUMBER_3 E'
+  - '&bn NUMBER_4 R'
+  - '&bn N5 T'
   - $$mdi:arrow-up-bold$$
-  - {t: Y, h: '6'}
-  - {t: U, h: '7'}
-  - {t: I, h: '8'}
-  - {t: O, h: '9'}
-  - {t: P, h: '0'}
+  - '&bn NUMBER_6 Y'
+  - '&bn N7 U'
+  - '&bn N8 I'
+  - '&bn N9 O'
+  - '&bn N0 P'
   - GLOBE
   - {t: '$$mdi:backspace$$', type: backspace}
   - A
@@ -110,7 +110,7 @@ layers:
   - '*'
   - (
   - )
-  - {t: '$$mdi:backspace$$', type: backspace}
+  - GLOBE
   - {t: '$$mdi:backspace$$', type: backspace}
   - F1
   - F2
