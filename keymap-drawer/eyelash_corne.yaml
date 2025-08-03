@@ -1,17 +1,18 @@
+layout: {zmk_keyboard: eyelash_corne}
 layers:
   QWERTY:
   - $$mdi:keyboard-tab$$
-  - {t: Q, h: '1'}
-  - {t: W, h: '2'}
-  - {t: E, h: '3'}
-  - {t: R, h: '4'}
-  - {t: T, h: '5'}
+  - Q
+  - W
+  - E
+  - R
+  - T
   - $$mdi:arrow-up-bold$$
-  - {t: Y, h: '6'}
-  - {t: U, h: '7'}
-  - {t: I, h: '8'}
-  - {t: O, h: '9'}
-  - {t: P, h: '0'}
+  - Y
+  - U
+  - I
+  - O
+  - P
   - GLOBE
   - {t: '$$mdi:backspace$$', type: backspace}
   - A
