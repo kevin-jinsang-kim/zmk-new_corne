@@ -13,7 +13,7 @@ layers:
   - I
   - O
   - P
-  - GLOBE
+  - {t: \, s: '|'}
   - {t: '$$mdi:backspace$$', type: backspace}
   - A
   - S
